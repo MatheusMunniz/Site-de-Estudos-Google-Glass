@@ -1,0 +1,253 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:ital,wght@1,700&family=Ubuntu:wght@300&display=swap');
+@font-face {
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+body {
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #ffe5ea;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+div#interface {
+	width: 1000px;
+	margin: -20px auto 0px auto;
+	padding: 10px;
+}
+p {
+	text-align: justify;
+	text-indent: 50px;
+}
+a {
+	color: #a0223a;
+	text-decoration: none;
+}
+a:hover {
+	font-weight: bolder;
+}
+header#cabecalho img#icone{
+	position: absolute;
+	left: 1250px;
+	top: 70px;
+}
+header#cabecalho {
+	border-bottom: 5px white solid;
+	height: 150px;
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 101px;
+}
+
+header#cabecalho h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30pt;
+	color: white;
+	padding: 0px;
+	margin-bottom: 0px;
+}
+header#cabecalho h2 {
+	font-family: 'Ubuntu', sans-serif;
+	color: #f64062;
+	padding: 0px;
+	margin-top: 0px;
+}
+/* Formatação de imagens com legendas */
+
+figure.foto-legenda {
+	position: relative;
+	border: 8px solid #f64062;
+	box-shadow: 4px 8px 0px #a0223a;
+
+}
+figure.foto-legenda img {
+	width: 100%;
+	height: 100%;
+}
+
+figure.foto-legenda figcaption {
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	margin: 0px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption {
+	opacity: 1;
+}
+
+/* Formatação do menu */
+
+nav#menu {
+	display: block;
+}
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 820px;
+}
+nav#menu li{
+	display: inline-block;
+	background-color: #f64062;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 0.3s;
+}
+nav#menu li:hover {
+	background-color: #a0223a;
+}
+nav#menu h1 {
+	display: none;
+}
+
+nav#menu a {
+	font-family: Arial, sans-serif;
+	color: white;
+	text-decoration: none;
+}
+nav#menu a:hover {
+	text-align: center;
+	transition: 0.3s;
+	color: white;
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+section#corpo {
+	display: block;
+	width: 605px;
+	float: left;
+	border-right: 2px solid white;
+	padding-right: 15px;
+}
+article#noticia-principal h2 {
+	font-size: 12pt;
+	color: white;
+	background-color: #a0223a;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+header#cabecalho-artigo h1 {
+	font-family: FonteLogo, sans-serif;
+	font-size: 20pt;
+	color: #a0223a;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.direita {
+	text-align: right;
+}
+header#cabecalho-artigo h2 {
+	font-size: 15pt;
+	color: black;
+	background-color: rgba(0, 0, 0, 0);
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+header#cabecalho-artigo h3 {
+	font-size: 12pt;
+	color: #a0223a;
+
+}
+table#tabelaspec {
+	border: 2px solid white;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table#tabelaspec td {
+	font-family: 'Ubuntu', sans-serif;
+	border: 1px solid white;
+	padding: 10px;
+	text-align: center;
+}
+table#tabelaspec td.ce {
+	color: white;
+	font-weight: bold;
+	background-color: #a0223a;
+}
+table#tabelaspec td.cd {
+	background-color: #f64062;
+}
+table#tabelaspec caption {
+	color: #a0223a;
+	font-size: 17pt;
+	font-weight: bolder;
+}
+table#tabelaspec caption span {
+	display: block;
+	float: right;
+	color: black;
+	font-size: 8pt;
+	margin-top: 13px;
+}
+aside#lateral {
+	display: block;
+	width: 350px;
+	float: right;
+	color: white;
+	background-color: #a0223a;
+	margin-top: 10px;
+	padding: 10px;
+	box-shadow: 0px 15px 0px #f64062;
+}
+aside#lateral h1 {
+	font-family: FonteLogo;
+	font-size: 20pt;
+	color: #a0223a;
+}
+aside#lateral h1.lateral {
+	color: white;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+aside#lateral h2 {
+	background-color: #f64062;
+	font-size: 12pt;
+	color: white;
+	padding: 5px;
+}
+footer#rodape {
+	clear: both;
+	border-top: 2px solid white;
+}
+
+footer#rodape p {
+	text-align: center;
+	color: #f64062;
+}
+div#tv-radio2 {
+	width: 900px;
+	height: 380px;
+	margin: auto;
+}
+video#filme2 {
+	border: 5px solid #a0223a;
+	display:block;
+	position: relative;
+	left: 0px;
+	top: 10px;
+	width: 595px;
+}
+div#tv-radio3 {
+	width: 900px;
+	height: 215px;
+	margin: auto;
+}
+video#filme3 {
+	border: 5px solid #f64062;
+	display:block;
+	position: relative;
+	left: 0px;
+	top: 10px;
+	width: 340px;
+}
+
+
